@@ -3,13 +3,11 @@ import axios from "axios";
 // Redux Reducer Types
 import { GET_RESTAURANT, GET_SPECIFIC_RESTAURANT } from "./restaurant.type";
 
-import { API_URL } from "../../../key";
-
 export const getRestaurant = () => async (dispatch) => {
   try {
     const restaurantList = await axios({
       method: "GET",
-      url: `${API_URL}/restaurant/?city=NCR`,
+      url: "https://zomato-clone-backend-thejas.herokuapp.com/restaurant/?city=NCR",
     });
 
     return dispatch({ type: GET_RESTAURANT, payload: restaurantList.data });
@@ -22,7 +20,7 @@ export const getSpecificRestaurant = (_id) => async (dispatch) => {
   try {
     const restaurant = await axios({
       method: "GET",
-      url: `${API_URL}/restaurant/${_id}`,
+      url: `https://zomato-clone-backend-thejas.herokuapp.com/restaurant/${_id}`,
     });
 
     return dispatch({

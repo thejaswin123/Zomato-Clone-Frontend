@@ -3,13 +3,11 @@ import axios from "axios";
 // Redux Types
 import { GET_USER, SELF, CLEAR_USER } from "./user.type";
 
-import { API_URL } from "../../../key";
-
 export const getUser = (_id) => async (dispatch) => {
   try {
     const User = await axios({
       method: "GET",
-      url: `${API_URL}/user/${_id}`,
+      url: `https://zomato-clone-backend-thejas.herokuapp.com/user/${_id}`,
     });
 
     return dispatch({ type: GET_USER, payload: User.data });
@@ -22,7 +20,7 @@ export const getMySelf = () => async (dispatch) => {
   try {
     const User = await axios({
       method: "GET",
-      url: `${API_URL}/user/`,
+      url: `https://zomato-clone-backend-thejas.herokuapp.com/user/`,
     });
 
     return dispatch({ type: SELF, payload: User.data });

@@ -3,13 +3,11 @@ import axios from "axios";
 // Redux Types
 import { CREATE_ORDER, ORDER_PLACED } from "./order.type";
 
-import { API_URL } from "../../../key";
-
 export const createOrder = (amount) => async (dispatch) => {
   try {
     const order = await axios({
       method: "POST",
-      url: `${API_URL}/payments/new`,
+      url: "https://zomato-clone-backend-thejas.herokuapp.com/payments/new",
       data: { amount },
     });
 
@@ -36,7 +34,7 @@ export const orderPlaced =
         };
         axios({
           method: "POST",
-          url: `${API_URL}/order/new`,
+          url: `https://zomato-clone-backend-thejas.herokuapp.com/order/new`,
           data: { orderDetails },
         });
       });

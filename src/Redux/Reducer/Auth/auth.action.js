@@ -6,13 +6,11 @@ import { SIGN_IN, SIGN_OUT, SIGN_UP, GOOGLE_AUTH } from "./auth.type";
 // redux actions
 import { getMySelf, clearUser } from "../User/user.action";
 
-import { API_URL, CLIENT_URL } from "../../../key";
-
 export const signIn = (userData) => async (dispatch) => {
   try {
     const User = await axios({
       method: "POST",
-      url: `${API_URL}/auth/signin`,
+      url: "https://zomato-clone-backend-thejas.herokuapp.com/auth/signin",
       data: { credentials: userData },
     });
 
@@ -33,11 +31,11 @@ export const signUp = (userData) => async (dispatch) => {
   try {
     const User = await axios({
       method: "POST",
-      url: `${API_URL}/auth/signup`,
+      url: "https://zomato-clone-backend-thejas.herokuapp.com/auth/signup",
       data: { credentials: userData },
     });
 
-    window.location.href = `${CLIENT_URL}/delivery`;
+    window.location.href = "https://zomato-clone-thejaswin.netlify.app/delivery";
 
     localStorage.setItem(
       "zomatoUser",
@@ -56,7 +54,7 @@ export const googleAuth = (token) => async (dispatch) => {
 
     dispatch({ type: GOOGLE_AUTH, payload: {} });
 
-    window.location.href = `${CLIENT_URL}/delivery`;
+    window.location.href = "https://zomato-clone-thejaswin.netlify.app/delivery";
   } catch (error) {
     return dispatch({ type: "ERROR", payload: error });
   }
@@ -66,7 +64,7 @@ export const signOut = () => async (dispatch) => {
   try {
     localStorage.removeItem("zomatoUser");
     clearUser();
-    window.location.href = `${CLIENT_URL}/delivery`;
+    window.location.href = "https://zomato-clone-thejaswin.netlify.app/delivery";
 
     return dispatch({ type: SIGN_OUT, payload: {} });
   } catch (error) {
