@@ -22,7 +22,7 @@ function Checkout() {
     },
     {
       name: "Work",
-      address: "123243 Main St, NCR, New Delhi",
+      address: "123243 Main St, Chennai, Tamilnadu",
     },
     {
       name: "Gym",

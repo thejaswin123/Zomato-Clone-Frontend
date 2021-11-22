@@ -119,7 +119,7 @@ function Overview() {
           </div>
           <div className="my-4">
             <h4 className="text-lg font-medium">Average Cost</h4>
-            <h6>${reduxState?.averageCost} for one order (approx.)</h6>
+            <h6>₹{reduxState?.averageCost} for one order (approx.)</h6>
             <small className="text-gray-500">
               Exclusive of applicable taxes and service charges, if any
             </small>
@@ -128,29 +128,29 @@ function Overview() {
             <h4 className="text-lg font-medium">Similar Restaurants</h4>
             <div>
               <Slider {...settings}>
-                <MenuSimilarRestaurantCard
-                  image="https://b.zmtcdn.com/data/pictures/chains/1/18216901/c9028cccf313b8a09996ea30e3fe8526_featured_v2.jpg"
-                  title="Unplugged Courtyard"
+              <MenuSimilarRestaurantCard
+                  image="https://b.zmtcdn.com/data/pictures/0/18604730/10f7d667606b6504bda86ac89f3db7fa_o2_featured_v2.jpg"
+                  title="The Delhi Dhaba"
                 />
                 <MenuSimilarRestaurantCard
-                  image="https://b.zmtcdn.com/data/pictures/chains/1/18216901/c9028cccf313b8a09996ea30e3fe8526_featured_v2.jpg"
-                  title="Unplugged Courtyard"
+                  image="https://b.zmtcdn.com/data/pictures/chains/7/68607/a104b53df2e8d9998c238b2b608cc8af_o2_featured_v2.jpg?output-format=webp"
+                  title="SS Hyderabad Biryani"
                 />
                 <MenuSimilarRestaurantCard
-                  image="https://b.zmtcdn.com/data/pictures/chains/1/18216901/c9028cccf313b8a09996ea30e3fe8526_featured_v2.jpg"
-                  title="Unplugged Courtyard"
+                  image="https://b.zmtcdn.com/data/pictures/8/67438/42f75f3b37d106ab8a404216846fd391_o2_featured_v2.jpg"
+                  title="Udipi Hotel"
                 />
                 <MenuSimilarRestaurantCard
-                  image="https://b.zmtcdn.com/data/pictures/chains/1/18216901/c9028cccf313b8a09996ea30e3fe8526_featured_v2.jpg"
-                  title="Unplugged Courtyard"
+                  image="https://b.zmtcdn.com/data/pictures/chains/1/65141/7d59d4ed9c6e0beb21a76e7a5ae3d87b_o2_featured_v2.jpg"
+                  title="Dindigul Thalappakatti"
                 />
                 <MenuSimilarRestaurantCard
-                  image="https://b.zmtcdn.com/data/pictures/chains/1/18216901/c9028cccf313b8a09996ea30e3fe8526_featured_v2.jpg"
-                  title="Unplugged Courtyard"
+                  image="https://b.zmtcdn.com/data/pictures/chains/1/65381/c2c01dabe8d4c96c5b2bbdba6330d90f_o2_featured_v2.jpg"
+                  title="Murugan Idli Shop"
                 />
                 <MenuSimilarRestaurantCard
-                  image="https://b.zmtcdn.com/data/pictures/chains/1/18216901/c9028cccf313b8a09996ea30e3fe8526_featured_v2.jpg"
-                  title="Unplugged Courtyard"
+                  image="https://b.zmtcdn.com/data/pictures/chains/1/65031/a1a2a2f77fc3654e676be652c10c1ca4_o2_featured_v2.jpg"
+                  title="Anjappar"
                 />
               </Slider>
             </div>

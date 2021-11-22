@@ -36,12 +36,12 @@ function RestaurantCard(props) {
 
               {props.isOff && (
                 <span className="bg-zomato-600 text-white px-2 py-1 rounded text-sm">
-                  $20 OFF
+                ₹20 OFF
                 </span>
               )}
             </div>
             <span className="bg-white bg-opacity-75 p-1 rounded mr-3">
-              {props.durationOfDelivery} min
+              {props.durationOfDelivery} 30 min
             </span>
           </div>
           <img
@@ -59,7 +59,7 @@ function RestaurantCard(props) {
           </div>
           <div className="flex items-center justify-between text-gray-500">
             <p>{props.cuisine.join(", ")}</p>
-            <p>${props.averageCost} for one </p>
+            <p>₹{props.averageCost} for one </p>
           </div>
         </div>
       </div>

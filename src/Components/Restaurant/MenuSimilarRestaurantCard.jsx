@@ -18,7 +18,7 @@ function MenuSimilarRestaurantCard(props) {
             <div className="flex items-center justify-between text-sm">
               <span className="flex items-center gap-1">
                 <span className="flex items-center gap-1 bg-green-700 text-white p-1 rounded">
-                  30 <TiStar />
+                  4 <TiStar />
                 </span>
                 Dining
               </span>

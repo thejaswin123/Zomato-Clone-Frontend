@@ -102,7 +102,7 @@ function LargeNav({ user, isDropdownOpen, setIsDropdownOpen, signIn, signUp }) {
               </span>
               <input
                 type="text"
-                placeholder="Delhi NCR"
+                placeholder="Chennai"
                 className="focus:outline-none"
               />
               <IoMdArrowDropdown />

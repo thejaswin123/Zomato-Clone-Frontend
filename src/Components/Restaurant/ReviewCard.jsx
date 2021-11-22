@@ -23,7 +23,7 @@ function ReviewCard(props) {
           <div className="flex items-center gap-2">
             <div className="w-10 h-10 rounded-full">
               <img
-                src="https://b.zmtcdn.com/data/user_profile_pictures/d76/cc84183f68cc34027812bdf62585cd76.jpg"
+                src="https://media-exp1.licdn.com/dms/image/D5635AQGjmhElJEPs3w/profile-framedphoto-shrink_100_100/0/1628760840681?e=1637676000&v=beta&t=XjHXqkZZlLZZvISDg-407onP4OK9gnMjLQz1SeLHW7A"
                 alt="avatar"
                 className="w-full h-full rounded-full object-center"
               />
